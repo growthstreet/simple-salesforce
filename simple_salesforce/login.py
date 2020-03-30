@@ -154,7 +154,7 @@ def SalesforceLogin(
             consumer_key is not None and \
             privatekey_file is not None:
         header = {'alg': 'RS256'}
-        expiration = datetime.utcnow() + timedelta(minutes=3)
+        expiration = datetime.utcnow() + timedelta(minutes=63)
         payload = {
             'iss': consumer_key,
             'sub': username,
